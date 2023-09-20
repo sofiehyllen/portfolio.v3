@@ -8,11 +8,12 @@ export default function PageTanken(){
             <Link to ="/" className="route-link back-link">&#10094; BACK</Link>
 
             <Infobox 
-            title="2. semesters eksamen" 
+            title="Final exam 2. semester" 
             year="2023" 
-            client="Tanken Aarhus" 
-            task="To design and code a website" 
-            service="Webdesign, etc." 
+            client="Tanken, Aarhus" 
+            task="To design and develop a concept and an interactive digital prototype for a company or another external partner. 
+            Furthermore, we had to argue how the concept creates value for both the customer and users" 
+            service="Webdesign, website development, design, brand design, user research" 
             url="http://tanken.sofiehyllen.dk/" 
             git="(____)"/>
             

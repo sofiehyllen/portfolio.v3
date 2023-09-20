@@ -50,20 +50,20 @@ h3{
 h4{
     text-align: left;
     font-family: "roboto-mono", monospace;
-    font-size: 130%;
+    font-size: 2vw;
     padding-bottom: 3%;
     
 }
 
 h5{
     font-family: "roboto-mono", monospace;
-    font-size: 1.1vw;
+    font-size: 1vw;
     
 }
 
 p{
     font-family: "roboto-mono", monospace;
-    font-size: 1.1vw;
+    font-size: 1vw;
 }
 
 
@@ -219,6 +219,7 @@ border-radius: 10px;
     padding-top: 7px;
     padding-left: 17px;
     position: sticky;
+    z-index: 1;
 }
 
 .close{
@@ -238,50 +239,43 @@ border-radius: 10px;
    
     padding: 2%;
     margin: 17px;
-    height: max-content;
-    position: relative;
+    height: fit-content;
+  
 }
 
 .infobox-grid{
     display: grid;
-    grid-template-columns: 180px auto;
-    grid-template-rows: auto;
+    grid-template-columns: 170px 230px;
     margin-bottom: 20px;
-    overflow-wrap: break-word;
-    background-color: bisque;
-    
+    word-wrap: break-word;
 }
 
 .grid-item {
     text-align: left;
     margin-bottom: 20px;
-    width: fit-content;
-    background-color: aquamarine;
+    position: relative;
   }
 
 
 
 .grid-item a{
     color: black;
-    font-size: 1.1vw;
+    font-size: 1vw;
     font-family: "roboto-mono", monospace;
     cursor: ne-resize;
 }
 
 .infobox-top{
-    margin-top: 30px;
-    padding-top: 10px;
-    margin-bottom: 10px;
-    padding-bottom: 40px;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
     border-bottom: 1px solid rgb(169, 169, 169);
-    border-top: 1px solid rgb(169, 169, 169);
 }
 
 
 
 
 /*BILLEDEGALLERI*/
-    .gallery-container{
+    .gallery-container .modal-container{
         width: 65%;
         
     }
@@ -367,8 +361,42 @@ border-radius: 10px;
 
 
 
+.frame{
+    border: white solid 10px;
+    box-shadow: #00000022 1px 1px 10px;
+}
 
+.illustration-flex-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1%;
+}
 
+.illustration-container img{
+    width: 90%;
+}
+.illustration-container{
+  width: 65%;
+  text-align: right;
+}
+
+.illustration-section{
+    margin-bottom: 15%;
+}
+
+.back-link{
+    color: black;
+    font-family: "owners", sans-serif;
+    font-size: 5vw;
+}
+
+#illustration2{
+    width: 75%;
+}
+
+#illustration3{
+    width: 70%;
+}
 
 
 
@@ -534,11 +562,7 @@ border-radius: 10px;
         
     }
 
-    .back-link{
-        color: black;
-        font-family: "owners", sans-serif;
-        font-size: 25px;
-    }
+
    
 
 
@@ -571,21 +595,21 @@ border-radius: 10px;
     }
 
     .infobox p, .infobox a, .infobox h5{
-        font-size: 2.5vw;
-       
+        font-size: 2.3vw;
+       line-height: 110%;
     }
 
     .infobox-top{
-        padding-bottom: 15px;
+        margin: 0 0 10px 0;
+        padding: 0 0 10px 0;
     }
 
     .grid-item{
-        margin: 0;
-        padding: 0;
+        margin: 10px 0 0 0;
     }
 
     .infobox-grid{
-        
+        grid-template-columns: 30% 70%;
         margin: 0;
     }
 
@@ -639,7 +663,7 @@ border-radius: 10px;
     display: none;
    }
 
-.back-link{
+.modal-container .back-link{
     display: none;
 }
 }

@@ -8,11 +8,11 @@ export default function PageHamanns(){
             <Link to ="/" className="route-link back-link">&#10094; BACK</Link>
 
             <Infobox 
-            title="Mobile First" 
+            title="Mobile First Project" 
             year="2022" 
             client="Hamanns, Emma" 
-            task="To design and code a website" 
-            service="Webdesign, etc." 
+            task="To design and develop a website that explores the Mobile First paradigm and Responsive Web Design strategy." 
+            service="Webdesign, website development, responsive web design, user research, design, design identity" 
             url="http://hamanns.sofiehyllen.dk/"
             git="(____)"/>
             

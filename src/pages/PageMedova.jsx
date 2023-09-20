@@ -8,11 +8,12 @@ export default function PageMedova(){
             <Link to ="/" className="route-link back-link">&#10094; BACK</Link>
 
             <Infobox 
-            title="1. semesters eksamen" 
+            title="Final exam 1. semester" 
             year="2022" 
             client="Medova (Fictional assignment)" 
-            task="To rebrand and redesign Medova and design and code a website" 
-            service="Webdesign, viual identity, rebranding etc." 
+            task="To rebrand and redesign an already existing brand and create a responsive website that functions as an information and experience site for that specific brand. 
+            In addition to this we had to create various content based on the audience's needs regarding the chosen product." 
+            service="Webdesign, website development, viual identity, rebranding, design identity, user research" 
             url="http://medova.sofiehyllen.dk/"
             git="(____)"/>
             

@@ -28,10 +28,10 @@ export default function MobileFiles(){
 
             <div className="mobile-files subject-container">
                 <div className="file-container">
-                    <Link to = "/" className="route-link">
+                    <Link to = "/illustrations" className="route-link">
                         <div className="document-style"><img className="img-max" src="./src/assets/tekst.png" alt="FilLink" /></div>
                     </Link>
-                    <h3>blank</h3>
+                    <h3>Illustrations</h3>
                 </div>
 
                 <div className="file-container">

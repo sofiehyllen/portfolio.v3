@@ -1,6 +1,8 @@
-import ContentHamanns from "../pages/PageHamanns";
-import ContentMedova from "../pages/PageMedova";
-import ContentTanken from "../pages/PageTanken";
+import PageHamanns from "../pages/PageHamanns";
+import PageIllustrations from "../pages/PageIllustrations";
+import PageMedova from "../pages/PageMedova";
+import PageTanken from "../pages/PageTanken";
+
 
 
 export default function Modal({ isOpen, onClose, content }) {
@@ -35,7 +37,7 @@ export default function Modal({ isOpen, onClose, content }) {
                 <span className="close" onClick={onClose}>&times;</span>
             </div>
             <div className="modal-content">
-                {content === "ContentTanken" ? <ContentTanken /> : content === "ContentMedova" ? <ContentMedova /> : content === "ContentHamanns" ? <ContentHamanns /> : "Ukendt side"}
+                {content === "PageTanken" ? <PageTanken /> : content === "PageMedova" ? <PageMedova /> : content === "PageHamanns" ? <PageHamanns /> : content === "PageIllustrations" ? <PageIllustrations/> : "Ukendt side"}
             </div>
         </div>
     </div>
