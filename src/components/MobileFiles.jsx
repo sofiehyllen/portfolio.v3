@@ -25,22 +25,6 @@ export default function MobileFiles(){
                     <h3>Hamanns</h3>
                 </div>                
             </div>
-
-            <div className="mobile-files subject-container">
-                <div className="file-container">
-                    <Link to = "/illustrations" className="route-link">
-                        <div className="document-style"><img className="img-max" src="./src/assets/tekst.png" alt="FilLink" /></div>
-                    </Link>
-                    <h3>Illustrations</h3>
-                </div>
-
-                <div className="file-container">
-                    <Link to = "/" className="route-link">
-                        <div className="document-style"><img className="img-max" src="./src/assets/tekst.png" alt="FilLink" /></div>
-                    </Link>
-                    <h3>blank</h3>
-                </div>              
-            </div>
         </section>
     )
 }

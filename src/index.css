@@ -79,7 +79,7 @@ p{
 
 /*TITEL*/
 #home{
-   background-color: aquamarine;
+    margin-bottom: 20%;
 }
 
 #titlename{
@@ -108,9 +108,8 @@ p{
 .article{
 margin: 0 auto;
 width: 80%;
-background-color: aqua;
 padding: 2%;
-margin-top: 20%;
+margin-top: 10%;
 }
 
 .subject-container{
@@ -325,14 +324,12 @@ border-radius: 10px;
 /*ABOUT SEKTION*/
 .about-content{
     display: flex;
-    padding-left: 70px;
-    padding-right: 70px;
+ 
 }
 
 .about-text{
     text-align: right;
-    font-size: 120%;
-    margin-top: 5%;
+    margin-top: 7%;
     margin-right: 2%;
 }
 
@@ -341,7 +338,7 @@ border-radius: 10px;
     margin-top: 5%;
     padding: 1% 1% .5% 1%;
     border-radius: 8px;
-    width: 40vw;
+    width: 100vw;
     height: fit-content;
     background-color: rgb(228, 228, 228);
 }
@@ -351,7 +348,8 @@ border-radius: 10px;
 }
 
 #about .has-text-align-right{
-    padding-bottom: 4vw;
+    padding-bottom: 3.5vw;
+    font-size: 1.25vw;
     line-height: 170%;
 }
 
@@ -370,6 +368,7 @@ border-radius: 10px;
     display: flex;
     justify-content: space-between;
     margin-bottom: 1%;
+    
 }
 
 .illustration-container img{
@@ -390,13 +389,9 @@ border-radius: 10px;
     font-size: 5vw;
 }
 
-#illustration2{
-    width: 75%;
-}
 
-#illustration3{
-    width: 70%;
-}
+
+/*ANIMATIONER FRA ANIMISTA*/
 
 
 
@@ -625,7 +620,20 @@ border-radius: 10px;
     #tanken5 div{
         height: 260px;
     }
+
+
+/*ILLUSTRATIONER*/
+.illustration-section{
+    flex-direction: column;
 }
+
+.illustration-container{
+    width: 100%;
+}
+
+
+}
+
 
 
 

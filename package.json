@@ -10,7 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "html-react-parser": "^4.2.2",
+    "n": "^9.1.0",
     "parse": "^4.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"

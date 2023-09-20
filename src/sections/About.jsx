@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react";
 import AboutContent from "../components/AboutContent";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 
 export default function About(){
 
@@ -17,9 +20,9 @@ export default function About(){
     }, []);
 
     return(
-        <section className="article" id="about">
-            <h2>about 03</h2>
-            <div>
+        <section  className="article" id="about">
+            <h2 data-aos="fade-right" data-aos-duration="1500" data-aos-delay="1000">about 03</h2>
+            <div data-aos="fade-left" data-aos-duration="1500" data-aos-delay="1000">
                 {posts.map(post =>(
                     <AboutContent key={post.id} post={post} />
                 ))}
