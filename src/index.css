@@ -19,7 +19,7 @@
 }
 
 .body{
-    margin: 3%;
+    margin: 3%;    
 }
 
 /*FONTSTYLES*/
@@ -36,6 +36,7 @@ h2{
     text-align: right;
     font-family: "roboto-mono", monospace;
     font-weight: 600;
+   
  
 }
 
@@ -43,6 +44,7 @@ h3{
     text-align: center;
     font-size: 1.5vw;
     font-family: "roboto-mono", monospace;
+    
 }
 
 h4{
@@ -50,44 +52,26 @@ h4{
     font-family: "roboto-mono", monospace;
     font-size: 130%;
     padding-bottom: 3%;
+    
 }
 
 h5{
     font-family: "roboto-mono", monospace;
-    font-size: 110%;
-  
+    font-size: 1.1vw;
+    
 }
 
 p{
     font-family: "roboto-mono", monospace;
-    font-size: 1.2vw;
+    font-size: 1.1vw;
 }
 
 
 
 
 
-/*NAVIGATION*/
-nav{
-    position: fixed;
 
-    text-align: end;
-    font-size: 1.5vw;
-    letter-spacing: 80%;
 
-    right: 20px;
-    top: 20px;
-}
-
-nav a{
-    color: black;
-    font-family: "roboto-mono", monospace;
-    font-weight: 700;
-}
-
-nav a:hover{
-    text-decoration: underline;
-}
 
 
 
@@ -95,7 +79,7 @@ nav a:hover{
 
 /*TITEL*/
 #home{
-    padding-bottom: 10%;
+   background-color: aquamarine;
 }
 
 #titlename{
@@ -113,7 +97,8 @@ nav a:hover{
     font-family: "owners", sans-serif;
     text-decoration: underline;
     margin-right: 30px;
-    font-size: 200%;
+    font-size: 3vw;
+    cursor: ne-resize;
 }
 
 
@@ -121,7 +106,11 @@ nav a:hover{
 
 
 .article{
-margin: 10% 9% 0 9%;
+margin: 0 auto;
+width: 80%;
+background-color: aqua;
+padding: 2%;
+margin-top: 20%;
 }
 
 .subject-container{
@@ -145,17 +134,37 @@ background:
 }
 
 
+
+
+
+
+/*PROJECT SEKTION*/
+#projects{
+    background-color: rgb(201, 230, 255);
+    box-shadow: rgba(103, 103, 103, 0.6) 10px 10px;
+    background-image: url("/src/assets/windows.baggrund.jpeg");
+    background-size: cover;
+   
+}
+
 .folder-style{
-width: 14vw;
+width: 12vw;
 
 }
 
 .document-style{
 width: 8vw;
+
 }
 
 .files{
-margin-right: 30px;
+margin-right: 50px;
+padding: 10px;
+border-radius: 10px;
+}
+
+.files:hover{
+    background-color: #04001236;
 }
 
 
@@ -230,25 +239,31 @@ margin-right: 30px;
     padding: 2%;
     margin: 17px;
     height: max-content;
+    position: relative;
 }
 
 .infobox-grid{
     display: grid;
-    grid-template-columns: 170px 220px;
+    grid-template-columns: 180px auto;
     grid-template-rows: auto;
     margin-bottom: 20px;
     overflow-wrap: break-word;
+    background-color: bisque;
+    
 }
 
 .grid-item {
-    font-size: 90%;
     text-align: left;
     margin-bottom: 20px;
+    width: fit-content;
+    background-color: aquamarine;
   }
+
+
 
 .grid-item a{
     color: black;
-    font-size: 110%;
+    font-size: 1.1vw;
     font-family: "roboto-mono", monospace;
     cursor: ne-resize;
 }
@@ -329,6 +344,7 @@ margin-right: 30px;
 
 .image-container{
     margin: 2%;
+    margin-top: 5%;
     padding: 1% 1% .5% 1%;
     border-radius: 8px;
     width: 40vw;
@@ -360,50 +376,170 @@ margin-right: 30px;
 
 
 @media only screen and (max-width: 720px){
+/*GENERELT*/
+    .body{
+        overflow-wrap: normal;
+    }
+
+
+/*FONT*/
+    h1{
+        font-size: 22vw;
+    }
+
     h2{
         font-size: 8vw;
-        padding-top: 50px;
-    }
-    h3{
-        font-size: 4vw;
     }
 
     p{
         font-size: 2vw;
     }
 
-    .body{
-        overflow-wrap: normal;
+/*NAVIGATION*/
+/*RESPONSIVE NAVIGATION*/
+
+/* Styling for responsive-button */
+.nav-container {
+    display: flex;
+    justify-content: flex-end; /* Placer knappen til højre side */
+    align-items: center;
+}
+
+.responsive-button {
+    position: relative;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.responsive-button .bar {
+    width: 45px;
+    height: 6px;
+    background-color: #000000;
+    margin: 6px 0;
+    transition: transform 0.3s ease;
+}
+
+.responsive-button .bar:nth-child(2){
+    width: 30px;
+    margin-left: 14px;
+    
+}
+
+/* Styling for aktive (åben) knap */
+.responsive-button.active .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-12px, 5px);
+}
+
+.responsive-button.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.responsive-button.active .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-12px, -5px);
+}
+
+
+.nav-menu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+
+    background-color: #bebebe;
+    padding: 20px;
+    text-align: center;
+    transition: top 0.3s ease;
+    z-index: 1;
+}
+
+.nav-menu ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.nav-menu li{
+    margin-top: 3vw;
+}
+
+.nav-menu a {
+    color: black;
+    font-size: 30px;
+    font-family: "roboto-mono", monospace;
+    font-weight: 700;
+}
+
+.nav-menu.open {
+    top: 0;
+}
+
+
+
+/*HOME SEKTION*/
+#home{
+    padding-top: 80%;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#sofie-hoved{
+    width: 70px;
+}
+
+.titlename{
+    padding-top: 0;
+}
+
+.links a{
+    display: block;
+    width: fit-content;
+    margin-bottom: 20px;
+    font-size: 8vw;
+}
+
+
+/*PROJECT SEKTION*/
+    #project{
+        padding: 0;
+        height: fit-content;
     }
-    nav{
+    .files{
         display: none;
     }
 
-    .links a{
-        display: block;
+   .folder-style{
+        width: 70px;
+   }
+
+   .document-style{
+        width: 50px;
+   }
+
+    .mobile-files h3{
+        font-size: 17px;
+        text-align: center;
     }
 
-    .article{
-        margin: 1%;
-        width: 100%;
-        justify-content: center;
+    .file-container{
+        text-align: center;
+        margin-right: 20px;
+        margin-bottom: 10px;
+       
     }
 
     .subject-container{
         flex-wrap: wrap;
+        margin: 0 0 20px 0;
+        
     }
 
-    .files{
-        display: none;
+    .back-link{
+        color: black;
+        font-family: "owners", sans-serif;
+        font-size: 25px;
     }
-    .folder-style{
-        width: 150px;
-        margin-bottom: 30px;
-    }
-
-    .document-style{
-        width: 100px;
-    }
+   
 
 
 
@@ -431,8 +567,7 @@ margin-right: 30px;
 /*INFOBOX*/
     .infobox{
         width: 100%;
-        margin: 0;
-       
+        margin: 20px 0 0 0;
     }
 
     .infobox p, .infobox a, .infobox h5{
@@ -468,40 +603,48 @@ margin-right: 30px;
     }
 }
 
+
+
+
+
+
 @media only screen and (min-width: 720px){
+/*NAVIGATION*/
+.nav-menu{
+    position: fixed;
+
+    text-align: end;
+    font-size: 1.5vw;
+    letter-spacing: 80%;
+
+    right: 20px;
+    top: 20px;
+}
+
+.nav-menu a{
+    color: black;
+    font-family: "roboto-mono", monospace;
+    font-weight: 700;
+}
+
+.nav-menu a:hover{
+    text-decoration: underline;
+}
+
    .mobile-files{
     display: none;
    }
+
+   .responsive-button{
+    display: none;
+   }
+
+.back-link{
+    display: none;
+}
 }
 
 
 
-button {
-border-radius: 8px;
-border: 1px solid transparent;
-padding: 0.6em 1.2em;
-font-size: 1em;
-font-weight: 500;
-font-family: inherit;
-background-color: #1a1a1a;
-cursor: pointer;
-transition: border-color 0.25s;
-}
-button:hover {
-border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-outline: 4px auto -webkit-focus-ring-color;
-}
 
-@media (prefers-color-scheme: light) {
-:root {
-color: #213547;
-background-color: #ffffff;
-}
-button {
-background-color: #f9f9f9;
-}
-}
 

@@ -1,27 +1,29 @@
 
 import React from "react"
-import About from "./sections/About"
-import Contact from "./sections/Contact"
-import Home from "./sections/Home"
-import Projects from "./sections/Projects"
+import { Route } from "react-router-dom"
+import { Routes } from "react-router-dom"
 import Navigation from "./components/Navigation"
+import PageHome from "./pages/PageHome"
+import PageTanken from "./pages/PageTanken"
+import PageMedova from "./pages/PageMedova"
+import PageHamanns from "./pages/PageHamanns"
+
+
 
 function App() {
   return (
 
 <div className="body">
     <div className="grid"></div>
-    <nav>
-        <Navigation/>
-    </nav>
 
-    <main>
-        <Home id="home"/> 
-        <Projects id="projects"/>
-        <About id="about"/>
-        <Contact id="contact"/>
-    </main>
 
+
+    <Routes className="routes" >
+        <Route path="/" element={<PageHome/>} />
+        <Route path="/tanken" element={<PageTanken/>} />
+        <Route path="/medova" element={<PageMedova/>} />
+        <Route path="/hamanns" element={<PageHamanns/>} />
+    </Routes>
 </div>
   )
 }

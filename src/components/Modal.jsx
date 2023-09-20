@@ -1,6 +1,7 @@
-import ContentHamanns from "./ContentHamanns";
-import ContentMedova from "./ContentMedova";
-import ContentTanken from "./ContentTanken";
+import ContentHamanns from "../pages/PageHamanns";
+import ContentMedova from "../pages/PageMedova";
+import ContentTanken from "../pages/PageTanken";
+
 
 export default function Modal({ isOpen, onClose, content }) {
 
