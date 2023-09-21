@@ -34,7 +34,7 @@ export default function Modal({ isOpen, onClose, content }) {
     <div className="modal-overlay" onClick={onClose}>
         <div className="modal" onClick={(e) => e.stopPropagation()}>
             <div className="title-bar">
-                <span className="close" onClick={onClose}>&times;</span>
+                <div className="close-circle" onClick={onClose}><span className="close" >&times;</span></div>
             </div>
             <div className="modal-content">
                 {content === "PageTanken" ? <PageTanken /> : content === "PageMedova" ? <PageMedova /> : content === "PageHamanns" ? <PageHamanns /> : content === "PageIllustrations" ? <PageIllustrations/> : "Ukendt side"}
