@@ -476,6 +476,7 @@ border-radius: 10px;
     display: flex;
     justify-content: center;
     margin-bottom: 4%;
+    position: relative;
 }
 
 .contact-links-left{
@@ -488,6 +489,20 @@ border-radius: 10px;
     margin-right: 5px;
  }
 
+ .instagram-illustration{
+    height: 11vw;
+    width: 11vw;
+    position: absolute;
+    top: 2vw;
+    right: 26vw;
+ }
+
+
+
+
+
+
+
  .bottom-text{
     display: flex;
     justify-content: space-between;
@@ -498,6 +513,7 @@ border-radius: 10px;
     font-family: "owners", sans-serif;
     font-size: 1.3vw;
     cursor: pointer;
+    
 }
 
 #instagram a{
