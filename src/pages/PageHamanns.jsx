@@ -6,6 +6,7 @@ import hamannsKop from "/src/assets/hamanns.kop.jpg"
 import hamannsRund1 from "/src/assets/hamanns.rund1.png"
 import hamannsLogo from "/src/assets/hamanns.logo.png"
 import hammansRund2 from "/src/assets/hamanns.rund2.png"
+import hamannsMenu from "/src/assets/hamanns.menu.png"
 
 export default function PageHamanns(){
 
@@ -36,7 +37,7 @@ export default function PageHamanns(){
                     <div><img className="img-max" src={hammansRund2} alt="hamanns6" /></div>
                 </div>
                 <div>
-                    <div><img className="img-max" src="./src/assets/hamanns.menu.png" alt="hamanns7" /></div>
+                    <div><img className="img-max" src={hamannsMenu} alt="hamanns7" /></div>
                 </div>
             </div>
         </section>
