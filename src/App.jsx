@@ -7,6 +7,7 @@ import PageTanken from "./pages/PageTanken"
 import PageMedova from "./pages/PageMedova"
 import PageHamanns from "./pages/PageHamanns"
 import PageIllustrations from "./pages/PageIllustrations"
+import PageSkills from "./pages/PageSkills"
 
 
 
@@ -24,6 +25,7 @@ function App() {
         <Route path="/medova" element={<PageMedova/>} />
         <Route path="/hamanns" element={<PageHamanns/>} />
         <Route path="/illustrations" element={<PageIllustrations/>} />
+        <Route path="/skills" element={<PageSkills/>}/>
     </Routes>
 </div>
   )

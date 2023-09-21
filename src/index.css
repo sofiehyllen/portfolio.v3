@@ -405,6 +405,38 @@ border-radius: 10px;
 }
 
 
+.skills{
+    text-align: center;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+.skills-window{
+    background-color: rgb(32, 31, 31);
+    border-radius: 10px;
+    width: 60vw;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 3%;
+}
+
+.skills-window-text{
+    background-color: #141313;
+    color: rgb(224, 224, 224);
+    border-radius: 10px 10px 0 0;
+    padding: 2%;
+}
+
+.skills img{
+    width: 15%;
+    margin: 2%;
+}
+
+
+
+
+
+
 
 #contact{
     width: 100%;
@@ -415,7 +447,6 @@ border-radius: 10px;
 
 #contact h1{
     font-size: 11vw;
-    
     margin-bottom: 4%;
     color: #ffffff;
 }
@@ -501,7 +532,7 @@ border-radius: 10px;
 }
 
 .illustration-section{
-    margin-bottom: 15%;
+    margin-bottom: 10%;
 }
 
 .back-link{
@@ -510,10 +541,9 @@ border-radius: 10px;
     font-size: 5vw;
 }
 
-#page-illustrations{
+.document{
     padding: 2%;
 }
-
 
 
 
@@ -611,7 +641,7 @@ border-radius: 10px;
     }
 
     .nav-menu a {
-        color: black;
+        color: rgb(255, 255, 255);
         font-size: 30px;
         font-family: "roboto-mono", monospace;
         font-weight: 700;
@@ -751,6 +781,13 @@ border-radius: 10px;
     #page-illustrations h4{
         font-size: 4vw;
     }
+
+/*SKILLS*/
+.skills-window{
+    border-radius: 5px;
+    width: 80vw;
+    height: auto;
+}
 }
 
 

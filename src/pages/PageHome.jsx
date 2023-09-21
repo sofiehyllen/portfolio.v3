@@ -4,8 +4,7 @@ import Contact from "../sections/Contact";
 import Home from "../sections/Home";
 import Projects from "../sections/Projects";
 import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
-// ..
+import 'aos/dist/aos.css';
 AOS.init();
 
 export default function PageHome(){
@@ -13,8 +12,8 @@ export default function PageHome(){
         <section>
             <Navigation/>
             <Home/>
-            <Projects/>
             <About/>
+            <Projects/>
             <Contact/>
         </section>
     )

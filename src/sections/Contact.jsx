@@ -1,7 +1,7 @@
 import sofieSidder from "/src/assets/sofie.sidder.BW.jpg"
 export default function Contact(){
     return(
-        <section className="article" id="contact">
+        <section id="contact">
             <h1>Let's <br /> connect!</h1>
             <p>SEND ME A MESSAGE</p>
             <a href="mailto:sofiehyllen@hotmail.com" target="blank">SOFIEHYLLEN@HOTMAIL.COM</a>
