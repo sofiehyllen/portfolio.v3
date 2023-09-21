@@ -17,7 +17,7 @@ export default function Navigation(){
                     <li><a href="#home" onClick={closeNav}>Home 01</a></li>
                     <li><a href="#projects" onClick={closeNav}>Projects 02</a></li>
                     <li><a href="#about" onClick={closeNav}>About 03</a></li>
-                    <li><a href="#contact" onClick={closeNav}>Contact 04</a></li>
+                    <li><a href="#contact" onClick={closeNav}>Connect 04</a></li>
                 </ul>
             </nav>
 

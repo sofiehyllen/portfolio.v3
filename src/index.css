@@ -72,17 +72,19 @@ p{
 
 
 .nav-menu{
-    position: fixed;
 
+position: fixed;
     text-align: end;
     font-size: 1.5vw;
     letter-spacing: 80%;
 
     right: 20px;
     top: 20px;
+    z-index: 3;
 }
 
 .nav-menu a{
+
     color: black;
     font-family: "roboto-mono", monospace;
     font-weight: 700;
@@ -90,7 +92,6 @@ p{
 
 .nav-menu a:hover{
     text-decoration: underline;
-    cursor: pointer;
 }
 
 
@@ -164,7 +165,11 @@ background:
     padding-left: 12%;
     padding-right: 12%;
     width: 100%;
-    background-image: url("/src/assets/windows.baggrund.jpeg");
+    background-image: url("/src/assets/landscape.jpg");
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
@@ -401,6 +406,76 @@ border-radius: 10px;
 
 
 
+#contact{
+    width: 100%;
+    padding: 5% 0 0 0;
+    text-align: center;
+    background-color: #FF800B;
+}
+
+#contact h1{
+    font-size: 11vw;
+    
+    margin-bottom: 4%;
+    color: #ffffff;
+}
+
+#contact p{
+    color: white;
+    font-family: "owners", sans-serif;
+    font-size: 1.3vw;
+}
+
+#contact a{
+    color: white;
+    font-family: "roc-grotesk-compressed", sans-serif;
+    cursor: ne-resize;
+    line-height: 90%;
+    font-size: 5vw;
+}
+
+#contact-image{
+    margin: 0 auto;
+    width: 30%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+.contact-container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4%;
+}
+
+.contact-links-left{
+   text-align: left;
+   margin-left: 5px;
+}
+
+.contact-links-right{
+    text-align: right;
+    margin-right: 5px;
+ }
+
+ .bottom-text{
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+ }
+
+#back-to-top a{
+    font-family: "owners", sans-serif;
+    font-size: 1.3vw;
+    cursor: pointer;
+}
+
+#instagram a{
+    text-decoration: line-through;
+}
+
+#instagram a:hover{
+    cursor: no-drop;
+}
 
 
 
@@ -438,6 +513,9 @@ border-radius: 10px;
 #page-illustrations{
     padding: 2%;
 }
+
+
+
 
 
 
@@ -621,8 +699,8 @@ border-radius: 10px;
 
     #about .has-text-align-right{
         padding-bottom: 3vw;
-        font-size: 2.3vw;
-        line-height: 160%;
+        font-size: 2vw;
+        line-height: 130%;
     }
 
 /*INFOBOX*/
