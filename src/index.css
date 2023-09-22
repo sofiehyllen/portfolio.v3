@@ -45,7 +45,7 @@ h3{
     text-align: center;
     font-size: 1.5vw;
     font-family: "owners", sans-serif;
-    color: white;
+ 
 }
 
 h4{
@@ -59,7 +59,10 @@ h4{
 h5{
     font-family: "roboto-mono", monospace;
     font-size: 1vw;
-    
+}
+
+h5 a{
+text-decoration: underline;
 }
 
 p{
@@ -123,8 +126,6 @@ position: fixed;
     font-size: 3vw;
     cursor: ne-resize;
 }
-
-
 
 
 
@@ -226,7 +227,7 @@ border-radius: 10px;
     position: relative;
 
     height: 80%;
-    width: 80%;
+    width: 75%;
     cursor: auto;
 
     overflow-y: auto;
@@ -294,7 +295,7 @@ border-radius: 10px;
 
 .infobox-grid{
     display: grid;
-    grid-template-columns: 170px 230px;
+    grid-template-columns: 160px 230px;
     margin-bottom: 20px;
     word-wrap: break-word;
 }

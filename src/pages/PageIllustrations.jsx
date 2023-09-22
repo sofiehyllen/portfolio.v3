@@ -8,12 +8,19 @@ import illustrationYakitori from "/src/assets/yakitori.gif"
 import medovaTekop from "/src/assets/medova.tekop.jpg"
 import medovaJulekugle from "/src/assets/medova.julekugle.jpg"
 import medovaPlante from "/src/assets/medova.plante.jpg"
+import tankenDrink from "/src/assets/tanken.drink.png"
 
 export default function PageIllustrations(){
-
     return(
         <section className="document" id="page-illustrations">        
             <Link to ="/" className="route-link back-link">&#10094; BACK</Link>
+
+            <div className="illustration-flex-container illustration-section">
+                <h4>Drink illustration:</h4>
+                <div className="illustration-flex-container">
+                    <div><img className="img-max" src={tankenDrink} alt="Illustration5" /></div>
+                </div>    
+            </div>
 
             <div className="illustration-flex-container illustration-section">
                 <h4>Marble illustrations:</h4>
@@ -49,6 +56,8 @@ export default function PageIllustrations(){
                     </div>
                 </div>    
             </div>
+
+
         </section>
     )
 }

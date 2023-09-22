@@ -22,7 +22,7 @@ export default function Projects() {
                     <Link to = "/illustrations" className="route-link">
                         <div className="document-style"><img className="img-max" src={tekst} alt="FilLink" /></div>
                     </Link>
-                    <h3>AI.png</h3>
+                    <h3>Illustrations</h3>
                 </div> 
                 <div className="file-container">
                     <Link to = "/skills" className="route-link">

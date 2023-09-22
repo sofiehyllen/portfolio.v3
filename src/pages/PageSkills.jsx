@@ -10,7 +10,7 @@ export default function PageSkills(){
                 <div className="skills-window-text">
                     <h4>Technical skills</h4>
                     <p>Here i present some of my relevant technical skills. <br />
-                        I excel in some more than others, but I have a fundamental and basic knowledge of all of them <br />
+                        I excel in some more than others, but I have a fundamental and basic knowledge of them all<br />
                         - the rest i am still in the process of learning!</p>
                     </div>   
                 <div className="skills">

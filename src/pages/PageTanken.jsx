@@ -3,7 +3,7 @@ import Infobox from "../components/Infobox";
 import tankenTote from "/src/assets/tanken.tote.jpg"
 import tankenBeer from "/src/assets/tanken.beer.png"
 import tankenIkoner1 from "/src/assets/tanken.ikonserie1.png"
-import tankenIkoner2 from "/src/assets/tanken.ikonserie1.png"
+import tankenIkoner2 from "/src/assets/tanken.ikonserie2.png"
 import tankenForside from "/src/assets/tanken.forside.jpg"
 import tankenFarvetema from "/src/assets/tanken.farvetema.png"
 import tankenVisitkort from "/src/assets/tanken.visitkort.jpg"
