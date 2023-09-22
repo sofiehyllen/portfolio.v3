@@ -1,7 +1,6 @@
 import parse from "html-react-parser";
 export default function AboutContent({post}){
 
-  //  let image = "https://cederdorff.github.io/img/logo512.webp";
   let image = ""
   let billede = false
         if (post._embedded && post._embedded["wp:featuredmedia"]){
@@ -10,7 +9,7 @@ export default function AboutContent({post}){
         }
 
     return(
-        //vi skriver en ternary, hvis billede = true viser den billeder, ellers laver den et span
+        //Jeg skriver en ternary, hvis billede = true viser den billeder, ellers laver den et tomt span
         <article className="about-content">
             <div className="about-text">{parse(post.content.rendered)}</div>
             <div className="image-container"> 

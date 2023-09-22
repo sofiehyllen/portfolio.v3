@@ -16,9 +16,6 @@ function App() {
 
 <div className="body">
     <div className="grid"></div>
-
-
-
     <Routes className="routes">
         <Route path="/" element={<PageHome/>} />
         <Route path="/tanken" element={<PageTanken/>} />

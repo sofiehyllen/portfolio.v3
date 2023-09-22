@@ -1,5 +1,4 @@
 import PageHamanns from "../pages/PageHamanns";
-import PageIllustrations from "../pages/PageIllustrations";
 import PageMedova from "../pages/PageMedova";
 import PageTanken from "../pages/PageTanken";
 
@@ -11,12 +10,12 @@ export default function Modal({ isOpen, onClose, content }) {
     event.preventDefault();
   }
 
-  // Når modalen åbnes, tilføj en eventlistener til body for at forhindre sidegennemgang
+  // Når modalen åbnes, tilføjes en eventlistener til body for at forhindre sidegennemgang
   if (isOpen) {
     document.body.style.overflow = 'hidden';
     document.body.addEventListener('touchmove', preventScroll, { passive: false });
   } else {
-    // Når modalen lukkes, fjern eventlisteneren og gendan sidegennemgangen
+    // Når modalen lukkes, fjernes eventlisteneren og gendanner sidegennemgangen
     document.body.style.overflow = 'auto';
     document.body.removeEventListener('touchmove', preventScroll, { passive: false });
   }
