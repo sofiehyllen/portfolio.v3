@@ -35,7 +35,7 @@ export default function Modal({ isOpen, onClose, content }) {
             </div>
             <div className="modal-content">
                 {content === "PageTanken" ? <PageTanken /> : content === "PageMedova" ? <PageMedova /> : 
-                content === "PageHamanns" ? <PageHamanns /> : content === "PageIllustrations" ? <PageIllustrations/> : "Ukendt side"}
+                content === "PageHamanns" ? <PageHamanns /> : "Ukendt side"}
             </div>
         </div>
     </div>

@@ -101,7 +101,7 @@ position: fixed;
 
 /*TITEL*/
 #home{
-    margin-bottom: 20%;
+    margin-bottom: 10%;
     margin-left: 3%;
 }
 
@@ -695,10 +695,13 @@ border-radius: 10px;
     .article{
         width: 100%;
         margin-top: 20%;
+
     }
 
     #projects{
         padding: 0 2% 0 0;
+        display: flex;
+        flex-direction: column-reverse;
     }
 
     .files{
@@ -732,11 +735,12 @@ border-radius: 10px;
     .about-content{
         padding: 0;
         margin: 0;
-   
+        flex-direction: column-reverse;
     }
 
     .image-container{
-        width: 200%;
+        width: 65%;
+        
     }
 
     .modal-container{
@@ -744,9 +748,10 @@ border-radius: 10px;
     }
 
     #about .has-text-align-right{
-        padding-bottom: 3vw;
-        font-size: 2vw;
+        padding-bottom: 6vw;
+        font-size: 2.6vw;
         line-height: 130%;
+        text-align: left;
     }
 
 /*INFOBOX*/

@@ -18,7 +18,7 @@ export default function Projects() {
             </div>
 
 
-            <div className=" subject-container">
+            <div className="subject-container">
                 <div className="file-container">
                     <Link to = "/illustrations" className="route-link">
                         <div className="document-style"><img className="img-max" src={tekst} alt="FilLink" /></div>

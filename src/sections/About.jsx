@@ -21,8 +21,8 @@ export default function About(){
 
     return(
         <section  className="article" id="about">
-            <h2 data-aos="fade-right" data-aos-duration="1500">about 02</h2>
-            <div data-aos="fade-left" data-aos-duration="1500" data-aos-delay="500">
+            <h2 data-aos="fade-right" data-aos-duration="1000">about 02</h2>
+            <div data-aos="fade-left" data-aos-duration="1000">
                 {posts.map(post =>(
                     <AboutContent key={post.id} post={post} />
                 ))}
