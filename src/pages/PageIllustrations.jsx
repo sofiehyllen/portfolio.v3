@@ -11,8 +11,6 @@ import medovaPlante from "/src/assets/medova.plante.jpg"
 
 export default function PageIllustrations(){
 
-    
-
     return(
         <section className="document" id="page-illustrations">        
             <Link to ="/" className="route-link back-link">&#10094; BACK</Link>

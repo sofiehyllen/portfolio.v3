@@ -19,7 +19,7 @@ function App() {
 
 
 
-    <Routes className="routes" >
+    <Routes className="routes">
         <Route path="/" element={<PageHome/>} />
         <Route path="/tanken" element={<PageTanken/>} />
         <Route path="/medova" element={<PageMedova/>} />

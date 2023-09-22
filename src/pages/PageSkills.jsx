@@ -11,7 +11,7 @@ export default function PageSkills(){
                     <h4>Technical skills</h4>
                     <p>Here i present some of my relevant technical skills. <br />
                         I excel in some more than others, but I have a fundamental and basic knowledge of all of them <br />
-                        - the rest i will learn along the way!</p>
+                        - the rest i am still in the process of learning!</p>
                     </div>   
                 <div className="skills">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
