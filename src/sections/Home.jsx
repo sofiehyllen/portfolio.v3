@@ -19,9 +19,9 @@ export default function Home(){
             </div> 
             
             <div data-aos="fade-right" data-aos-delay="1000" data-aos-duration="1000" className="links">
-                <a href="https://www.linkedin.com/in/sofie-fuglsang-hyllen-b98a6224a/" target="_blank">LINKEDIN</a>
-                <a href="https://www.facebook.com/sofiefuglsang.hyllen/" target="_blank">FACEBOOK</a>
-                <a href="mailto: sofiehyllen@hotmail.com" target="_blank">E-MAIL</a>
+                <a href="https://www.linkedin.com/in/sofie-fuglsang-hyllen-b98a6224a/" target="_blank" rel='noreferrer'>LINKEDIN</a>
+                <a href="https://www.facebook.com/sofiefuglsang.hyllen/" target="_blank" rel='noreferrer'>FACEBOOK</a>
+                <a href="mailto: sofiehyllen@hotmail.com" target="_blank" rel='noreferrer'>E-MAIL</a>
             </div>
         </section>
     )

@@ -9,13 +9,12 @@ import tekst from "/src/assets/tekst.png"
 export default function Projects() {
     return (
         <section className="article" id="projects">
-            <h2>projects 03</h2>
+            <h2>projects 02</h2>
             <div className="subject-container">
                 <File className="folder-style" text="Tanken" src= {mappe} alt="Mappe" modalContent="PageTanken" />
                 <File className="folder-style" text="Medova" src= {mappe} alt="Mappe" modalContent="PageMedova" />
                 <File className="folder-style" text="Hamanns" src= {mappe} alt="Mappe" modalContent="PageHamanns" />
             </div>
-
 
             <div className="subject-container">
                 <div className="file-container">

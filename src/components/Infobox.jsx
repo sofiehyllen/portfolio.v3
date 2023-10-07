@@ -20,10 +20,10 @@ export default function Infobox(props){
                 <div className="grid-item"><p>{props.service}</p></div>
 
                 <div className="grid-item"><h5>URL:</h5></div>
-                <div className="grid-item"> <h5><a href={props.url} target="_blank">{props.url}</a></h5></div>
+                <div className="grid-item"> <h5><a href={props.url} target="_blank" rel="noreferrer">{props.url}</a></h5></div>
 
                 <div className="grid-item"><h5>GIT:</h5></div>    
-                <div className="grid-item"> <h5><a href={props.git} target="_blank">{props.git}</a></h5></div>                  
+                <div className="grid-item"> <h5><a href={props.git} target="_blank" rel="noreferrer">{props.git}</a></h5></div>                  
             </div>
         </section>
     )

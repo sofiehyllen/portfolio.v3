@@ -12,8 +12,8 @@ export default function PageHome(){
         <section>
             <Navigation/>
             <Home/>
-            <About/>
             <Projects/>
+            <About/>
             <Contact/>
         </section>
     )

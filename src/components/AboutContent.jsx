@@ -1,6 +1,7 @@
 import parse from "html-react-parser";
-export default function AboutContent({post}){
 
+
+export default function AboutContent({post}){
   let image = ""
   let billede = false
         if (post._embedded && post._embedded["wp:featuredmedia"]){

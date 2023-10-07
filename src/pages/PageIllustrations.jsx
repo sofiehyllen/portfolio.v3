@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import illustrationNavn from "/src/assets/illustrationer.navn.png"
 import illustrationMarble from "/src/assets/illustrationer.marble.png"
 import illustrationMoon from "/src/assets/illustrationer.moon.png"
@@ -10,10 +10,15 @@ import medovaJulekugle from "/src/assets/medova.julekugle.jpg"
 import medovaPlante from "/src/assets/medova.plante.jpg"
 import tankenDrink from "/src/assets/tanken.drink.png"
 
+
+
 export default function PageIllustrations(){
+
+    const navigate = useNavigate();
+
     return(
-        <section className="document" id="page-illustrations">        
-            <Link to ="/" className="route-link back-link">&#10094; BACK</Link>
+        <section className="document" id="page-illustrations">  
+            <button onClick={() => navigate(-1)} className="route-link back-button">&#10094; BACK</button>
 
             <div className="illustration-flex-container illustration-section">
                 <h4>Drink illustration:</h4>

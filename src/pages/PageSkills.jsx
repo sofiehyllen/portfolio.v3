@@ -1,10 +1,13 @@
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import skillsPersonal from "/src/assets/skills.personal.png"
 
 export default function PageSkills(){
+
+    const navigate = useNavigate();
+
     return(
         <section className="document" id="page-skills">        
-            <Link to ="/" className="route-link back-link">&#10094; BACK</Link>
+            <button onClick={() => navigate(-1)} className="route-link back-button">&#10094; BACK</button>
 
             <div className="skills-window">
                 <div className="skills-window-text">

@@ -7,6 +7,7 @@
         font-weight: normal;
         text-decoration: none;
         list-style: none;
+        scroll-behavior: smooth;
     }
 
     .img-max{
@@ -26,7 +27,8 @@
         margin: 0 auto;
         width: 80%;
         padding: 2%;
-        margin-top: 10%;
+        margin-top: 5%;
+        
     }
 
     .subject-container{
@@ -34,7 +36,9 @@
         margin-top: 5%;
     }
 
-
+    .scroll{
+        scroll-behavior: smooth;
+    }
 
 
 
@@ -96,6 +100,7 @@
         right: 20px;
         top: 20px;
         z-index: 3;
+        
     }
 
     .nav-menu a{
@@ -118,6 +123,7 @@
     #home{
         margin-bottom: 10%;
         margin-left: 3%;
+ 
     }
 
     #titlename{
@@ -161,7 +167,7 @@
 
 /*PROJECT SEKTION*/
     #projects{
-        padding: 7% 12% 8% 12%;
+        padding: 4% 12% 4% 12%;
         width: 100%;
         background-image: url("/src/assets/landscape.jpg");
 
@@ -373,11 +379,12 @@
 /*ABOUT SEKTION*/
     .about-content{
         display: flex;
+        margin-bottom: 7%;
     }
 
     .about-text{
         text-align: right;
-        margin-top: 7%;
+        padding-top: 7%;
         margin-right: 2%;
     }
 
@@ -396,10 +403,10 @@
     }
 
     /*Teksten fra WordPress*/
-    #about .has-text-align-right{
+    .about-text p{
         padding-bottom: 3.5vw;
         font-size: 1.25vw;
-        line-height: 170%;
+        line-height: 130%;
     }
 
 
@@ -454,6 +461,7 @@
         padding: 10% 0 0 0;
         text-align: center;
         background-color: #FF800B;
+
     }
 
     #contact h1{
@@ -474,6 +482,7 @@
         cursor: ne-resize;
         line-height: 90%;
         font-size: 5vw;
+        
     }
 
     #contact-image{
@@ -557,10 +566,13 @@
         margin-bottom: 10%;
     }
 
-    .back-link{
+    .back-button{
         color: black;
+        border: none;
+        background-color: transparent;
         font-family: "owners", sans-serif;
         font-size: 5vw;
+        cursor: pointer;
     }
 
     .document{
@@ -579,7 +591,7 @@
         margin: 0;
     }
 
-    .back-link{
+    .back-button{
         font-size: 10vw;
     }
 
