@@ -1,6 +1,8 @@
 import { useState } from "react"
+import ScrollToTop from "./ScrollToTop";
 
 export default function Navigation(){
+    
     const [isOpen, setIsOpen] = useState(false);
 
     const responsiveNav= () => {
@@ -12,6 +14,7 @@ export default function Navigation(){
     };
     return(
         <div className="nav-container">
+            <ScrollToTop/>
             <nav className={`nav-menu ${isOpen ? 'open' : ''}`}>
                 <ul>
                     <li><a href="#home" onClick={closeNav}>Home 01</a></li>
@@ -25,7 +28,8 @@ export default function Navigation(){
                 <div className="bar"></div>
                 <div className="bar"></div>
                 <div className="bar"></div>
-            </button>            
+            </button>   
+                 
         </div>
     )
 }

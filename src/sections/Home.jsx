@@ -1,8 +1,8 @@
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 AOS.init();
-
 import hoved from "/src/assets/hoved.png"
+
 
 export default function Home(){
     return(

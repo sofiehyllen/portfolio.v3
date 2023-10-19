@@ -7,7 +7,7 @@
         font-weight: normal;
         text-decoration: none;
         list-style: none;
-        scroll-behavior: smooth;
+        
     }
 
     .img-max{
@@ -84,7 +84,9 @@
         font-size: 1vw;
     }
 
-
+    html a{
+        scroll-behavior: smooth;
+    }
 
 
 
@@ -123,7 +125,7 @@
     #home{
         margin-bottom: 10%;
         margin-left: 3%;
- 
+      
     }
 
     #titlename{

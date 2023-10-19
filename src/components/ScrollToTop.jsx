@@ -9,11 +9,12 @@ const ScrollToTop = () => {
     const scrollToTop = () => {
       window.scrollTo({
         top: 0,
-        behavior: 'smooth'
       });
     };
-
-    scrollToTop();
+    if (pathname) {
+        // Scroll kun til toppen, hvis der er en sti (for at undgå unødvendig scroll ved komponentens montering)
+        scrollToTop();
+      }
   }, [pathname]);
 
   return null;

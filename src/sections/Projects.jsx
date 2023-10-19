@@ -6,6 +6,7 @@ import mappe from "/src/assets/mappe.png"
 import tekst from "/src/assets/tekst.png"
 
 
+
 export default function Projects() {
     return (
         <section className="article" id="projects">
