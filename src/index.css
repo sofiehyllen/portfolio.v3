@@ -7,7 +7,8 @@
         font-weight: normal;
         text-decoration: none;
         list-style: none;
-        
+
+        scroll-behavior: smooth;
     }
 
     .img-max{
@@ -21,6 +22,7 @@
 
     .body{
         overflow: hidden;
+        scroll-behavior: smooth;
     }
 
     .article{
@@ -84,9 +86,7 @@
         font-size: 1vw;
     }
 
-    html a{
-        scroll-behavior: smooth;
-    }
+  
 
 
 
@@ -294,6 +294,7 @@
         padding: 2%;
         margin: 17px;
         height: fit-content;
+        contain: content;
     }
 
     .infobox-grid{
@@ -463,28 +464,25 @@
         padding: 10% 0 0 0;
         text-align: center;
         background-color: #FF800B;
-
+        color: white;
     }
 
-    #contact h1{
+    .contact-text h1{
         font-size: 11vw;
         margin-bottom: 4%;
-        color: #ffffff;
     }
 
-    #contact p{
-        color: white;
+    .contact-text p{
         font-family: "owners", sans-serif;
         font-size: 1.3vw;
     }
 
-    #contact a{
+    .contact-text a{
         color: white;
         font-family: "roc-grotesk-compressed", sans-serif;
         cursor: ne-resize;
         line-height: 90%;
         font-size: 5vw;
-        
     }
 
     #contact-image{
@@ -502,8 +500,8 @@
     }
 
     .contact-links-left{
-    text-align: left;
-    margin-left: 5px;
+        text-align: left;
+        margin-left: 5px;
     }
 
     .contact-links-right{
@@ -600,9 +598,6 @@
 
 
 
-
-
-
 /*FONT*/
     h1{
         font-size: 22vw;
@@ -618,6 +613,19 @@
 
 
 
+    .contact-text .bottom-text p{
+        font-size: 2vw;
+        padding-left: 3vw;
+        padding-top: 5vw;
+    }
+
+    #back-to-top a{
+        font-size: 5vw;
+    }
+
+    #back-to-top{
+        padding: 3vw;
+    }
 
 
 
@@ -741,6 +749,7 @@
 
     #projects{
         padding: 10% 0 2% 0;
+        background-attachment: initial;
     }
 
     .files{
@@ -777,28 +786,19 @@
 
 
 /*ABOUT SEKTION*/
-    .about-content{
-        padding: 0;
-        margin: 0;
-        flex-direction: column-reverse;
-    }
-
-    .image-container{
-        width: 65%;
-    }
 
     .modal-container{
         display: block;
     }
 
-    #about .has-text-align-right{
-        padding-bottom: 6vw;
-        font-size: 2.6vw;
-        line-height: 130%;
-        text-align: left;
+    .about-text p{
+        font-size: 2vw;
     }
 
-
+.image-container{
+    width: 170%;
+    margin-top: 11vw;
+}
 
 
 
@@ -883,6 +883,7 @@
 
 
 
+
 /*RESPONSIVE STYLES TIL DESKTOP-VIEWPORT-SIZE*/
 @media only screen and (min-width: 720px){
 /*NAVIGATION*/
@@ -890,7 +891,7 @@
     display: none;
     }
 
-    .modal-container .back-link{
+    .modal-container .back-button{
         display: none;
     }
 }

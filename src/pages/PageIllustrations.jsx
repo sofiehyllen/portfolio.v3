@@ -8,7 +8,6 @@ import illustrationYakitori from "/src/assets/yakitori.gif"
 import medovaTekop from "/src/assets/medova.tekop.jpg"
 import medovaJulekugle from "/src/assets/medova.julekugle.jpg"
 import medovaPlante from "/src/assets/medova.plante.jpg"
-import tankenDrink from "/src/assets/tanken.drink.png"
 
 
 
@@ -21,11 +20,12 @@ export default function PageIllustrations(){
             <button onClick={() => navigate(-1)} className="route-link back-button">&#10094; BACK</button>
 
             <div className="illustration-flex-container illustration-section">
-                <h4>Drink illustration:</h4>
+                <h4>Infographics:</h4>
                 <div className="illustration-flex-container">
-                    <div><img className="img-max" src={tankenDrink} alt="Illustration5" /></div>
+                    <div><img className="img-max" src={illustrationRamen} alt="Illustration5" /></div>
+                    <div><img className="img-max" src={illustrationYakitori} alt="Illustration6" /></div>
                 </div>    
-            </div>
+            </div>   
 
             <div className="illustration-flex-container illustration-section">
                 <h4>Marble illustrations:</h4>
@@ -41,13 +41,6 @@ export default function PageIllustrations(){
                 </div>    
             </div>
 
-            <div className="illustration-flex-container illustration-section">
-                <h4>Infographics:</h4>
-                <div className="illustration-flex-container">
-                    <div><img className="img-max" src={illustrationRamen} alt="Illustration5" /></div>
-                    <div><img className="img-max" src={illustrationYakitori} alt="Illustration6" /></div>
-                </div>    
-            </div>
 
             <div className="illustration-flex-container illustration-section">
             <h4>Watercolour:</h4>

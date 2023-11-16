@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Infobox from "../components/Infobox";
 import tankenTote from "/src/assets/tanken.tote.jpg"
 import tankenBeer from "/src/assets/tanken.beer.png"
@@ -10,10 +10,10 @@ import tankenVisitkort from "/src/assets/tanken.visitkort.jpg"
 
 
 export default function PageTanken(){
+    const navigate = useNavigate();
     return(
         <section className="modal-container">
-            <Link to ="/" className="route-link back-link">&#10094; BACK</Link>
-
+            <button onClick={() => navigate(-1)} className="route-link back-button">&#10094; BACK</button>
             <Infobox 
             title="Final exam 2. semester" 
             year="2023" 

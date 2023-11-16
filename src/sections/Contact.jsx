@@ -3,7 +3,7 @@ import underConstruction from "/src/assets/under.construction.png"
 
 export default function Contact(){
     return(
-        <section id="contact">
+        <section id="contact" className="contact-text">
             <h1>Let&apos;s <br /> connect!</h1>
             <p>SEND ME A MESSAGE</p>
             <a href="mailto:sofiehyllen@hotmail.com" target="blank">SOFIEHYLLEN@HOTMAIL.COM</a>
@@ -23,7 +23,7 @@ export default function Contact(){
             </div>
 
             <div className="bottom-text">
-                <p>&#169; SOFIE FUGLSANG HYLLEN 2023</p>
+                <p id="copyright">&#169; SOFIE FUGLSANG HYLLEN 2023</p>
                 <p id="back-to-top"><a href="#">JUMP TO TOP</a></p>
             </div> 
         </section>

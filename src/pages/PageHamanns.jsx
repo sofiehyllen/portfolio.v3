@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Infobox from "../components/Infobox";
 import hamannsWebshop from "/src/assets/hamanns.web.png"
 import hamannsMad from "/src/assets/hamanns.mad.jpg"
@@ -9,10 +9,11 @@ import hammansRund2 from "/src/assets/hamanns.rund2.png"
 import hamannsMenu from "/src/assets/hamanns.menu.png"
 
 export default function PageHamanns(){
+    const navigate = useNavigate();
 
     return(
         <section className="modal-container">
-            <Link to ="/" className="route-link back-link">&#10094; BACK</Link>
+            <button onClick={() => navigate(-1)} className="route-link back-button">&#10094; BACK</button>
 
             <Infobox 
             title="Mobile First Project" 

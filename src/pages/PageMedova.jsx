@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Infobox from "../components/Infobox";
 import medovaOriginal from "/src/assets/medova.tepose.original.png"
 import medovaGodnat from "/src/assets/medova.tepose.godnat.png"
@@ -11,9 +11,11 @@ import medovaBaggrund from "/src/assets/medova.baggrund.jpg"
 
 
 export default function PageMedova(){
+    const navigate = useNavigate();
+
     return(
         <section className="modal-container">
-            <Link to ="/" className="route-link back-link">&#10094; BACK</Link>
+            <button onClick={() => navigate(-1)} className="route-link back-button">&#10094; BACK</button>
 
             <Infobox 
             title="Final exam 1. semester" 
